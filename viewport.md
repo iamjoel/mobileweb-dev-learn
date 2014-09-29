@@ -6,6 +6,7 @@ initial-scale：初始缩放比例，也即是当页面第一次 load 的时候�
 maximum-scale：允许用户缩放到的最大比例。
 minimum-scale：允许用户缩放到的最小比例。
 user-scalable：用户是否可以手动缩放
+minimal-ui: iOS 7.1 的 Safari 中为 meta 标签新增 minimal-ui 属性，让网页在加载时便可隐藏顶部的地址栏与底部的导航栏
 
 [设置 viewport 实现定宽网页 WebApp 下布局自适应](http://wenzhixin.net.cn/2014/08/01/viewport_mobile)
 
@@ -39,3 +40,8 @@ $(function () {
 
 
     http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html
+
+
+
+
+https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag
