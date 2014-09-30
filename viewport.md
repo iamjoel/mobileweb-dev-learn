@@ -45,3 +45,15 @@ $(function () {
 
 
 https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag
+
+
+## 非响应式设计的viewport
+如果你没有定义viewport，如果你的网站的宽度大于980或者小于980，iPhone（包括android）会把它默认以980px的窗口来缩放和渲染，这样就会有各种问题。页面超过980的会显示不全，小于的会有白色背景
+
+对于非响应式设计的页面，设置 <meta name="viewport" content="width=页面宽度">
+
+常见错误
+`<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">`
+很多人常常使用initial-scale=1到非响应式网站上，这会让网站以100%宽度渲染而不会自动缩放，用户需要手动移动页面或者缩放。最差的是和initial-scale=1同时使用user-scalable=no或maximum-scale=1，这将使你的网站不能被缩放——用户不能放大/缩小网页来看到全部的内容。所以，请记住：如果你的网站不是响应式的，请不要使用initial-scale或者禁用缩放。
+
+转自 http://www.qianduan.net/non-responsive-design-viewport.html#more-13568
