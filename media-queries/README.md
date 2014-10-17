@@ -35,26 +35,27 @@
 
 ### 逻辑操作符
 操作符 not，and 和 only 可以用来构建复杂的媒体查询。    
-and 操作符用来把多个 媒体属性 组合起来，合并到同一条媒体查询中。只有当每个属性都为真时，这条查询的结果才为真。    
+and 操作符用来把多个 媒体属性 组合起来，合并到同一条媒体查询中。只有当每个属性都为
+真时，这条查询的结果才为真。    
 not 操作符用来对一条媒体查询的结果进行取反。    
 only 操作符表示仅在媒体查询匹配成功的情况下应用指定样式。可以通过它让选中的样式在老式浏览器中不被应用。    
-*注意：若使用了 not 或 only 操作符，必须明确指定一个媒体类型。*
+*注意：若使用了 not 或 only 操作符，必须明确指定一个媒体类
+型。*
 
 ### media query支持的属性
-| 属性  | 值 | 是否接受 min/max 前缀 | 描述|
-| ------------- | ------------- |
-| color  | 整数  | yes  | 每种色彩的字节数 |
-| color-index  | 整数  | yes  | 色彩表中的色彩数 |
-| device-aspect-ratio  | 整数/整数  | yes  | 宽高比例 |
-| device-height  | 整数+单位  | yes  | 设备屏幕的输出高度 |
-| device-width  | 整数+单位  | yes  | 设备屏幕的输出宽度 |
-| grid  | 整数  | no  | 是否是基于格栅的设备 |
-| height  | 整数+单位  | yes  | 渲染界面的高度 |
-| monochrome  | 整数  | yes  | 单色帧缓冲器中每像素字节 |
-| resolution  | 分辨率(“dpi/dpcm”)  | yes  | 分辨率 |
-| scan  | Progressive interlaced  | no  | tv媒体类型的扫描方式 |
-| width  | 整数+单位  | yes  | 渲染界面的宽度 |
-| orientation  | Portrait/landscape  | no  | 横屏或竖屏 |
+ 属性  | 值 | 是否接受 min/max 前缀 | 描述|
+------ | ------------- |----------- |-------
+color  | 整数  | yes  | 每种色彩的字节数
+device-aspect-ratio  | 整数/整数  | yes  | 宽高比例
+device-height  | 整数+单位  | yes  | 设备屏幕的输出高度
+device-width  | 整数+单位  | yes  | 设备屏幕的输出宽度
+grid  | 整数  | no  | 是否是基于格栅的设备
+height  | 整数+单位  | yes  | 渲染界面的高度
+monochrome  | 整数  | yes  | 单色帧缓冲器中每像素字节
+resolution  | 分辨率(“dpi/dpcm”)  | yes  | 分辨率
+scan  | Progressive interlaced  | no  |tv媒体类型的扫描方|
+width  | 整数+单位  | yes  | 渲染界面的宽度
+orientation  | Portrait/landscape  | no  | 横屏或竖屏
 
 ### webkit浏览器对media query支持的属性
 常见的有
