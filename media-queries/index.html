@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>media queries basic use</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    div {
+        margin: 0px;
+        padding: 0;
+    }
+    .wrap:before,
+    .wrap:after {
+        content: " ";
+        display: table;
+    }
+    .wrap:after {
+        clear: both;
+    }
+    .wrap {
+    	box-sizing: border-box;
+        margin: 30px auto;
+    }
+    .wrap>*{
+    	transition: width 1s ease-out;
+    }
+    .wrap :first-child {
+        background: #f00;
+    }
+    .wrap :last-child {
+        background: #ff0;
+    }
+    [class^=col-] {
+        height: 30px;
+        float: left;
+    }
+    @media (min-width: 1000px) {
+        .col-lg-3 {
+            width: 25%;
+        }
+        .col-lg-9 {
+            width: 75%;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 999px){
+        .col-md-6 {
+            width: 50%;
+        }
+    }
+    @media (max-width: 600px) {
+        .col-sm-3 {
+            width: 25%;
+        }
+        .col-sm-9 {
+            width: 75%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+	<h2>调整页面宽度~</h2>
+    <div class="wrap">
+        <div class="col-lg-9 col-md-6 col-sm-3"></div>
+        <div class="col-lg-3 col-md-6 col-sm-9"></div>
+    </div>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# 浏览器web端开发学习
+# 移动web端开发学习
 
 ## 头信息
 加<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,3 +8,6 @@
 
 ## 兼容性
 * [手机浏览器对html5的支持]http://mobilehtml5.org/
+
+## 资源
+* [你的首个多设备站点 教程](https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site/?hl=zh-cn)
