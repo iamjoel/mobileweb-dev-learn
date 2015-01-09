@@ -20,3 +20,5 @@
 * [desing web principles](https://developers.google.com/web/fundamentals/layouts/principles/)
 * [mobileTech
 ](https://github.com/jtyjty99999/mobileTech) 移动方面的资源的汇总
+* [微信js-sdk](http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html)
+* [html5手机web应用模板](https://github.com/h5bp/mobile-boilerplate)
