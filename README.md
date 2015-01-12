@@ -23,6 +23,12 @@
 
 ## 其他
 * [字体设置最佳实践](font.md)
+* 参考学习的手机站
+	* [360导航](http://h5.mse.360.cn/navi.html) 各种单位用的rem
+	* [3gqq](http://3gqq.qq.com/) 导航那用的flexbox进行布局
+* 响应式图片
+	* [retinajs](http://imulus.github.io/retinajs/)
+* [fastclick](https://github.com/ftlabs/fastclick) 解决click事件有300ms延迟的问题
 
 ## 资源
 * [你的首个多设备站点 教程](https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site/?hl=zh-cn)
@@ -35,3 +41,4 @@
 * [常见手机的分辨率](http://screensiz.es/phone)
 * [html5 please](http://html5please.com/) html5的特性及使用
 * [腾讯移动Web前端知识库](https://github.com/AlloyTeam/Mars)
+
