@@ -15,6 +15,40 @@
 
 我看到很多网站为了实现这一效果，用了第三方类库，最常用的是iscroll（包括新浪手机页，百度等） 我一开始也使用，不过自从用了`-webkit-overflow-scrolling: touch;`样式后，就完全可以抛弃第三方类库了，把它加在body{}区域，所有的overflow需要滚动的都可以生效了。
 
+### 字体设置
+转自 https://github.com/AlloyTeam/Mars/blob/master/solutions/font-family.md
+```css
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+```
+
+iOS 4.0+ 使用英文字体 Helvetica Neue，之前的iOS版本降级使用 Helvetica。
+
+中文字体设置为华文黑体STHeiTi。
+
+需补充说明，华文黑体并不存在iOS的字体库中(http://support.apple.com/kb/HT5484?viewlocale=en_US)，
+但系统会自动将华文黑体STHeiTi兼容命中系统默认中文字体黑体-简或黑体-繁：
+
+```
+Heiti SC Light 黑体-简 细体
+Heiti SC Medium 黑体-简 中黑
+Heiti TC Light 黑体-繁 细体
+Heiti TC Medium 黑体-繁 中黑
+```
+
+原生Android下中文字体与英文字体都选择默认的无衬线字体。
+
+4.0之前版本英文字体原生Android使用的是Droid Sans，中文字体原生Android会命中Droid Sans Fallback。
+
+4.0+ 中英文字体都会使用原生Android新的Roboto字体。
+
+其他第三方Android系统也一致选择默认的无衬线字体。
+
+## 参考阅读
+* [Droid, the default font for older versions of Android](http://en.wikipedia.org/wiki/Droid_fonts)
+* [Roboto, the default font for newer versions of Android](http://en.wikipedia.org/wiki/Roboto)
+
 ## 资源
 * [你的首个多设备站点 教程](https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site/?hl=zh-cn)
 * [desing web principles](https://developers.google.com/web/fundamentals/layouts/principles/)
