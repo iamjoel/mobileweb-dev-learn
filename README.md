@@ -15,17 +15,30 @@
 
 我看到很多网站为了实现这一效果，用了第三方类库，最常用的是iscroll（包括新浪手机页，百度等） 我一开始也使用，不过自从用了`-webkit-overflow-scrolling: touch;`样式后，就完全可以抛弃第三方类库了，把它加在body{}区域，所有的overflow需要滚动的都可以生效了。
 
+### 使用click会出现绑定点击区域闪一下的情况
+解决：给该元素一个样式如下
+```
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+```
+
 ### 移动端web页面使用position:fixed的坑
 详细 见[这里](https://github.com/maxzhang/maxzhang.github.com/issues/2)    
 总之    
 * 在 android 手机下 fixed 表现要比 iOS 更好，软键盘弹出时，不会影响fixed元素定位；
 * 不要在 fixed 元素中使用 input / textarea 元素。
 
+### 使用click会出现绑定点击区域闪一下的情况
+* ，解决：给该元素一个样式如下
+
+### 关于REM
+http://www.dmtuan.com/?p=655
+
 ## 其他
 * [字体设置最佳实践](font.md)
 * 参考学习的手机站
 	* [360导航](http://h5.mse.360.cn/navi.html) 各种单位用的rem
 	* [3gqq](http://3gqq.qq.com/) 导航那用的flexbox进行布局
+	* [淘宝](http://m.taobao.com/)
 * 响应式图片
 	* [retinajs](http://imulus.github.io/retinajs/)
 * [fastclick](https://github.com/ftlabs/fastclick) 解决click事件有300ms延迟的问题
