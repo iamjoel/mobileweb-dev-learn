@@ -46,12 +46,18 @@ http://www.dmtuan.com/?p=655
 ## 资源
 * [你的首个多设备站点 教程](https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site/?hl=zh-cn)
 * [desing web principles](https://developers.google.com/web/fundamentals/layouts/principles/)
-* [mobileTech
-](https://github.com/jtyjty99999/mobileTech) 移动方面的资源的汇总
 * [微信js-sdk](http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html)
 * [html5手机web应用模板](https://github.com/h5bp/mobile-boilerplate)
 * [友盟指数](http://www.umindex.com/) 移动设备的各种统计
 * [常见手机的分辨率](http://screensiz.es/phone)
 * [html5 please](http://html5please.com/) html5的特性及使用
-* [腾讯移动Web前端知识库](https://github.com/AlloyTeam/Mars)
 
+### 知识汇总
+* [腾讯移动Web前端知识库](https://github.com/AlloyTeam/Mars)
+* [mobileTech](https://github.com/jtyjty99999/mobileTech) 移动方面的资源的汇总
+* [炎燎的移动Web前端开发汇总](https://github.com/maxzhang/maxzhang.github.com)
+
+### 好文收藏
+* 对Viewport解释
+	* [两个viewport的故事（第一部分）](http://weizhifeng.net/viewports.html)
+	* [两个viewport的故事（第二部分）](http://weizhifeng.net/viewports2.html)
