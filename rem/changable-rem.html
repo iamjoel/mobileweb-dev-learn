@@ -1,0 +1,113 @@
+<!doctype html>
+<html id="html">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>rem的使用</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: microsoft yahei;
+    }
+    .content {
+        width: 16rem;
+        margin: 0 auto;
+    }
+    .wrap {
+        width: 16rem;
+        position: relative;
+        height: 8rem;
+    }
+    .col1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 7.2rem;
+        height: 4rem;
+    }
+    .col2 {
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        width: 7.2rem;
+        height: 4rem;
+    }
+    .col3 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 8.8rem;
+        height: 8rem;
+    }
+    .wrap img {
+        width: 100%;
+        height: 100%;
+    }
+    .font1 {
+        font-size: 0.8rem
+    }
+    .font2 {
+        font-size: 0.7rem
+    }
+    .font3 {
+        font-size: 0.6rem
+    }
+    .margin {
+        background: #999933;
+        margin: 1rem;
+        height: 1rem;
+        color: #fff;
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .border {
+        border: 1px solid #3399CC;
+        height: 1rem;
+        font-size: 0.6rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+    </style>
+</head>
+
+<body>
+	<!-- http://www.dmtuan.com/?p=655 的demo -->
+    <div class="content">
+        <div class="wrap">
+            <div class="col1"><img src="img/1.jpg">
+            </div>
+            <div class="col2"><img src="img/2.jpg">
+            </div>
+            <div class="col3"><img src="img/3.jpg">
+            </div>
+        </div>
+        <div class="font1">32px字体</div>
+        <div class="font2">28px字体</div>
+        <div class="font3">24px字体</div>
+        <div class="margin">margin:1rem; height:1rem</div>
+        <div class="border">border:1px solid #3399CC; height:1rem;</div>
+    </div>
+</body>
+<script type="text/javascript">
+// 图片的缩放用的是 图片的宽高的单位也是rem的
+window.onload = htmlSize;
+window.onresize = htmlSize;
+
+function htmlSize() {
+    var cw = document.body.clientWidth;
+    cw = cw / 16;
+    //计算倍数，数值可变。
+    if (cw < 20) {
+        cw = 20
+    } //最小宽度 20*16=320px;
+    if (cw > 30) {
+        cw = 30
+    } //最大宽度 30*16=480px;
+    document.getElementById('html').style.fontSize = cw + 'px';
+}
+</script>
+
+</html>
