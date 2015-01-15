@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>没声明viewport</title>
+	<meta name="viewport" content="width=100">
+</head>
+<body>
+	<style>
+		body{
+			font-size: 16px;
+		}
+	</style>
+	<dl>
+		<dt>屏幕（visual viewport）宽度:</dt>
+		<dd id="v-vp-w"></dd>
+	</dl>
+	<dl>
+		<dt>实际内容(layout viewport)宽度:</dt>
+		<dd id="l-vp-w"></dd>
+	</dl>
+	<script>
+		window.addEventListener('load', function () {
+			outputLayoutInfo();
+			setTimeout(outputLayoutInfo, 1000);
+			// qq中点进去的
+			// iphone 6  208 208
+			// iphone 5  178
+			// iphone 5s  178
+			// window phone 320
+			// 三星 note3  360
+
+			//
+			// iphone 6 safari 100
+		});
+		function outputLayoutInfo(){
+			document.querySelector('#v-vp-w').innerHTML = window.innerWidth;
+			document.querySelector('#l-vp-w').innerHTML = document.documentElement.clientWidth;
+		}
+		// layout viewport有多宽？每个浏览器都不一样。Safari iPhone为980px，Opera为850px，Android WebKit为800px，最后IE为974px。
+	</script>
+</body>
+</html>

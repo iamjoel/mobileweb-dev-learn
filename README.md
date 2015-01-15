@@ -58,6 +58,14 @@ http://www.dmtuan.com/?p=655
 * [炎燎的移动Web前端开发汇总](https://github.com/maxzhang/maxzhang.github.com)
 
 ### 好文收藏
-* 对Viewport解释
-	* [两个viewport的故事（第一部分）](http://weizhifeng.net/viewports.html)
-	* [两个viewport的故事（第二部分）](http://weizhifeng.net/viewports2.html)
+## 对Viewport解释
+* [两个viewport的故事（第一部分）](http://weizhifeng.net/viewports.html)
+* [两个viewport的故事（第二部分）](http://weizhifeng.net/viewports2.html)
+
+layout viewport（页面实际的视口）: document.documentElement.clientWidth/height。    
+visual viewport（设备的视口，可视范围）: window.innerWidth/Height。    
+visual viewport的宽度即为device-width。
+`<meta name="viewport" content="width=320">` 设置的是layout viewport的宽度为320。很多移动浏览器都有最小viewport。小于这个值时，结果还是这个值。    
+一般是这样设置的`<meta name="viewport" content="width=device-width,initial-scale=1">`。    
+
+[demo](viewport.html)
