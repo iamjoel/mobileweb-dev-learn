@@ -68,4 +68,6 @@ visual viewport的宽度即为device-width。
 `<meta name="viewport" content="width=320">` 设置的是layout viewport的宽度为320。很多移动浏览器都有最小viewport。小于这个值时，结果还是这个值。    
 一般是这样设置的`<meta name="viewport" content="width=device-width,initial-scale=1">`。    
 
-[demo](viewport.html)
+我发现，只要`<meta name="viewport" content="width=某个值">`,不管那width是多少，页面的visual viewport的宽度就等于layout viewport的宽度
+
+[demo](viewport/)
