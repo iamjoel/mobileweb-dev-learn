@@ -21,6 +21,17 @@
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 ```
 
+### 表单元素
+focus时，页面会放大。
+解决方式，在viewport中加`maximum-scale=1`,例如
+```
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+```
+
+### 链接被点击时
+`-webkit-tap-highlight-color`来控制链接被点击时的颜色。
+推荐阅读 http://samcroft.co.uk/2012/alternative-to-webkit-tap-highlight-color-in-phonegap-apps/
+
 ### 移动端web页面使用position:fixed的坑
 详细 见[这里](https://github.com/maxzhang/maxzhang.github.com/issues/2)    
 总之    
