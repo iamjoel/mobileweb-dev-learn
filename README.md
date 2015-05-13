@@ -53,6 +53,9 @@ http://www.dmtuan.com/?p=655
 * 响应式图片
 	* [retinajs](http://imulus.github.io/retinajs/)
 * [fastclick](https://github.com/ftlabs/fastclick) 解决click事件有300ms延迟的问题
+* 无限加载更多
+	* img src 比 background 方式展示图片，使用到的内存资源可能会更多
+	* 滚出视野范围隐藏元素。用 visibility:hidden。当然也可以用 display:none,但会增加代码复杂度。
 
 ## 资源
 * [你的首个多设备站点 教程](https://developers.google.com/web/fundamentals/getting-started/your-first-multi-screen-site/?hl=zh-cn)
