@@ -6,6 +6,11 @@
 如果 IE 用户安装了 Chrome Frame 插件，则可以使用这个插
 件；如果没有安装，则使用 IE 浏览器最新、最好的引擎呈现，而不是以传统模式呈现。
 
+## 概念
+* [设备像素/css像素](concept/device-pixel-and-css-pixel.md)
+* [设备像素比率（Device Pixel Ratio，DPR）](concept/devicePixelRatio.md)
+
+
 ## 兼容性
 * [手机浏览器对html5的支持](http://mobilehtml5.org/)
 
