@@ -9,7 +9,7 @@
         if (width > 540) { // 最大宽度
             width = 540;
         }
-        var rem = width / 10; // 以10px为基准
+        var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
         docEl.style.fontSize = rem + 'px';
     }
 

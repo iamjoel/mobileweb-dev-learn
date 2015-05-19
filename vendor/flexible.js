@@ -71,7 +71,7 @@
         if (width / dpr > 540) {// 最大宽度
             width = 540 * dpr;
         }
-        var rem = width / 10; // 以10px为基准
+        var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
         docEl.style.fontSize = rem + 'px';
         flexible.rem = win.rem = rem;
     }
