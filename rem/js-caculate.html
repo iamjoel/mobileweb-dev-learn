@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title> viewport不缩放</title>
+	<!-- 在所有资源加载之前执行这个js -->
+	<script src="../vendor/caculate-rem.js"></script>
+	<style>
+	/* 1rem -> 10px */
+	p{
+		text-indent: 2em;
+		font-size: 0.6rem;
+	}
+	.rect{
+		width: 3rem;
+		height: 3rem;
+		margin: 2rem auto;
+		background-color: #ff0;
+	}
+	</style>
+</head>
+<body>
+	<p>
+		viewport不缩放,需要自己加viewport
+	</p>
+	<div class="rect"></div>
+</body>
+</html>

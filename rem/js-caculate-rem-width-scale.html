@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> viewport会缩放</title>
+	<!-- 在所有资源加载之前执行这个js -->
+	<script src="../vendor/flexible.js"></script>
+	<style>
+	/* 1rem -> 10px */
+	p{
+		text-indent: 2em;
+		font-size: 0.6rem;
+	}
+	.rect{
+		width: 3rem;
+		height: 3rem;
+		margin: 2rem auto;
+		background-color: #ff0;
+	}
+	</style>
+</head>
+<body>
+	<p>
+		通过引用改脚本，在ios中，通过viewport缩放，来达到页面像素（CSS像素）等于照物理像素渲染，提升清晰度。该脚本会生成viewport，不需自己加viewport
+	</p>
+	<div class="rect"></div>
+</body>
+</html>
