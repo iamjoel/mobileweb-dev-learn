@@ -1,0 +1,17 @@
+@charset "utf-8";
+$divide: 10;
+$pswWidth: 320;
+
+// https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@mixin toRem($property, $values...) {
+    $max: length($values);
+    $remValues: '';
+    @for $i from 1 through $max {
+        $value: nth($values, $i) * $divide / $pswWidth;
+        $remValues: #{$remValues + $value}rem;
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    }
+    #{$property}: $remValues;
+}

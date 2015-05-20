@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "rem";
+
+body {
+    font-size: 12px;
+}
+
+.nav-list {
+    box-sizing: border-box;
+    @include toRem(padding, 10);
+    text-align: justify;
+    font-size: 0;
+    &__item {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        @include toRem(width, 70);
+        &__img {
+            @include toRem(width, 70);
+            @include toRem(height, 70);
+            background-color: #ccc;
+            @include toRem(margin-bottom, 5);
+        }
+        &__text {
+            text-align: center;
+            @include toRem(font-size, 14);
+            color: #666;
+        }
+    }
+    // text-align: justify;必须要有
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
