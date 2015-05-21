@@ -27,9 +27,9 @@
 %btn {
     @extend %border-box;
     display: inline-block;
-    @include toRem(height, 40);
-    @include toRem(line-height, 40);
-    @include toRem(font-size, 16);
+    height: 40px/$ppr;
+    line-height: 40px/$ppr;
+    font-size: 16px/$ppr;
     color: #378be9;
     text-align: center;
     border-top: 1px solid #dfdfdf;
@@ -40,11 +40,11 @@
 }
 
 body {
-    @include toRem(font-size, 12);
+    font-size: 12px/$ppr;
     @extend %ff-hei;
     background-color: #f5f5f5;
     color: #333;
-    @include toRem(padding-bottom, 55);
+    padding-bottom: 55px/$ppr;
 }
 
 a {
@@ -57,13 +57,13 @@ a {
 }
 
 .header-slider {
-    @include toRem(height, 90);
+    height: 90px/$ppr;
     background-color: #ddd;
 }
 
 .nav-list {
     @extend %border-box;
-    @include toRem(padding, 10);
+    padding: 10px/$ppr;
     border-bottom: 1px solid #efefef;
     background-color: #fff;
     &__line {
@@ -80,47 +80,46 @@ a {
         @extend %border-box;
         display: inline-block;
         vertical-align: top;
-        @include toRem(width, 40);
-        @include toRem(margin-bottom, 10);
+        width: 40px/$ppr;
+        margin-bottom: 10px/$ppr;
         &__img {
-            @include toRem(width, 40);
-            @include toRem(height, 40);
+            width: 40px/$ppr;
+            height: 40px/$ppr;
+            margin-bottom: 5px/$ppr;
             background-color: #ccc;
-            @include toRem(margin-bottom, 5);
         }
         &__text {
             @extend %ff-hei;
             text-align: center;
-            @include toRem(font-size, 12);
+            font-size: 12px/$ppr;
             color: #666;
         }
     }
 }
 
 .block {
-    @include toRem(margin-top, 15);
+    margin-top: 15px/$ppr;
     background-color: #fff;
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     &__title {
-        @include toRem(height, 40);
-        @include toRem(line-height, 40);
-        @include toRem(padding-left, 30);
-        @include toRem(font-size, 15);
+        height: 40px/$ppr;
+        line-height: 40px/$ppr;
+        padding-left: 30px/$ppr;
+        font-size: 15px/$ppr;
         color: #666;
         border-bottom: 1px solid #e7e7e7;
-        // background: url()
     }
     &__content {
-        @include toRem(padding-left, 10);
-        @include toRem(padding-right, 10);
+        padding-left: 10px/$ppr;
+        padding-right: 10px/$ppr;
     }
 }
 
 .big-pic {
     position: relative;
-    @include toRem(height, 134);
-    @include toRem(margin-top, 10);
+    height: 134px/$ppr;
+    margin-top: 10px/$ppr;
     &__pic {
         display: block;
         width: 100%;
@@ -132,11 +131,11 @@ a {
         position: absolute;
         bottom: 0;
         left: 0;
-        @include toRem(height, 24);
-        @include toRem(line-height, 24);
+        height: 24px/$ppr;
+        line-height: 24px/$ppr;
         width: 100%;
-        @include toRem(padding-left, 10);
-        @include toRem(font-size, 12);
+        padding-left: 10px/$ppr;
+        font-size: 12px/$ppr;
         color: #fff;
         background-color: rgba(0, 0, 0, .6);
     }
@@ -145,21 +144,21 @@ a {
 .news {
     &__item {
         @extend %clearfix;
-        @include toRem(padding-top, 8);
-        @include toRem(padding-bottom, 8);
+        padding-top: 8px/$ppr;
+        padding-bottom: 8px/$ppr;
         border-bottom: 1px solid #f1f1f1;
         &:last-child {
             border-bottom: none;
         }
         &__pic {
             float: left;
-            @include toRem(width, 62);
-            @include toRem(height, 54);
+            width: 62px/$ppr;
+            height: 54px/$ppr;
         }
         &__text {
-            @include toRem(margin-left, 67);
-            @include toRem(line-height, 22);
-            @include toRem(font-size, 14);
+            margin-left: 67px/$ppr;
+            line-height: 22px/$ppr;
+            font-size: 14px/$ppr;
         }
     }
 }
@@ -167,35 +166,34 @@ a {
 .video {
     &__change-btn {
         @extend %btn;
-        @include toRem(margin-top, 10);
+        margin-top: 10px/$ppr;
         width: 100%;
     }
 }
 
 .suggest {
     &__des {
-        @include toRem(margin-top, 10);
-        @include toRem(margin-bottom, 10);
+        margin-top: 10px/$ppr;
+        margin-bottom: 10px/$ppr;
         @extend %clearfix;
         &__img {
             float: left;
-            @include toRem(width, 53);
-            @include toRem(height, 53);
+            height: 53px/$ppr;
+            height: 53px/$ppr;
         }
         &__text-wrap {
-            @include toRem(margin-left, 58);
-            // @include toRem(width, 240);
+            margin-left: 58px/$ppr;
         }
         &__title {
-            @include toRem(font-size, 14);
-            @include toRem(margin-bottom, 5);
+            font-size: 14px/$ppr;
+            margin-bottom: 5px/$ppr;
         }
         &__free {
             display: inline-block;
-            @include toRem(margin-left, 5);
-            @include toRem(font-size, 12);
-            @include toRem(height, 14);
-            @include toRem(line-height, 14);
+            margin-left: 5px/$ppr;
+            font-size: 12px/$ppr;
+            height: 14px/$ppr;
+            line-height: 14px/$ppr;
             border: 1px solid #28b83c;
             color: #28b83c;
         }
@@ -214,13 +212,12 @@ a {
 
 .info {
     &__item {
-        @include toRem(padding-top, 10);
-        @include toRem(padding-bottom, 10);
+        padding: 10px/$ppr 0;
         border-bottom: 1px solid #efefef;
         &__img {
             float: left;
-            @include toRem(width, 64);
-            @include toRem(height, 54);
+            width: 64px/$ppr;
+            height: 54px/$ppr;
         }
         &__text-wrap {
             @include toRem(margin-left, 72);

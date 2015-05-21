@@ -15,7 +15,7 @@ javascripts_dir = "/assets/javascripts"
 # relative_assets = true
 
 # soucemap。To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+# line_comments = true
 
 
 # If you prefer the indented syntax, you might want to regenerate this
