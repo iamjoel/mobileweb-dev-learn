@@ -260,7 +260,7 @@ a {
 .suggest__des__img {
   float: left;
   height: 1.65625rem;
-  height: 1.65625rem;
+  width: 1.65625rem;
 }
 /* line 184, ../sass/index.scss */
 .suggest__des__text-wrap {
