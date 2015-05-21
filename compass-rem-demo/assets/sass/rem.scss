@@ -1,6 +1,7 @@
 @charset "utf-8";
 $divide: 10;
 $pswWidth: 320;
+$ppr: 320px/$divide/1rem;// 定义单位
 
 // https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 @mixin toRem($property, $values...) {
