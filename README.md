@@ -47,7 +47,10 @@ focus时，页面会放大。
 * ，解决：给该元素一个样式如下
 
 ### 关于REM
-http://www.dmtuan.com/?p=655
+* [web app变革之rem](http://isux.tencent.com/web-app-rem.html)
+* [MobileWeb 适配总结](http://www.w3ctech.com/topic/979)
+* [demo](compass-rem-demo)
+
 
 ## 其他
 * [字体设置最佳实践](font.md)

@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "rem";
+@import "compass/utilities/";
+@import "compass/css3";
+%ff-yahei {
+    font-family: tahoma, arial, "STXihei", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "宋体", SimSun;
+}
+/* 普通黑体 */
+
+%ff-hei {
+    font-family: tahoma, arial, "STXihei", SimHei, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", "宋体", SimSun;
+}
+
+%ff-song {
+    font-family: tahoma, arial, "宋体", SimSun;
+}
+
+%clearfix {
+    @include pie-clearfix();
+}
+
+%border-box {
+    @include box-sizing(border-box);
+}
+
+%btn {
+    @extend %border-box;
+    display: inline-block;
+    @include toRem(height, 40);
+    @include toRem(line-height, 40);
+    @include toRem(font-size, 16);
+    color: #378be9;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    &:last-child {
+        border-right: none;
+    }
+}
+
+body {
+    @include toRem(font-size, 12);
+    @extend %ff-hei;
+    background-color: #f5f5f5;
+    color: #333;
+    @include toRem(padding-bottom, 55);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clearfix {
+    @include pie-clearfix();
+}
+
+.header-slider {
+    @include toRem(height, 90);
+    background-color: #ddd;
+}
+
+.nav-list {
+    @extend %border-box;
+    @include toRem(padding, 10);
+    border-bottom: 1px solid #efefef;
+    background-color: #fff;
+    &__line {
+        text-align: justify;
+        font-size: 0;
+        // text-align: justify;必须要有
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    &__item {
+        @extend %border-box;
+        display: inline-block;
+        vertical-align: top;
+        @include toRem(width, 40);
+        @include toRem(margin-bottom, 10);
+        &__img {
+            @include toRem(width, 40);
+            @include toRem(height, 40);
+            background-color: #ccc;
+            @include toRem(margin-bottom, 5);
+        }
+        &__text {
+            @extend %ff-hei;
+            text-align: center;
+            @include toRem(font-size, 12);
+            color: #666;
+        }
+    }
+}
+
+.block {
+    @include toRem(margin-top, 15);
+    background-color: #fff;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    &__title {
+        @include toRem(height, 40);
+        @include toRem(line-height, 40);
+        @include toRem(padding-left, 30);
+        @include toRem(font-size, 15);
+        color: #666;
+        border-bottom: 1px solid #e7e7e7;
+        // background: url()
+    }
+    &__content {
+        @include toRem(padding-left, 10);
+        @include toRem(padding-right, 10);
+    }
+}
+
+.big-pic {
+    position: relative;
+    @include toRem(height, 134);
+    @include toRem(margin-top, 10);
+    &__pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+    }
+    &__text {
+        @extend %border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include toRem(height, 24);
+        @include toRem(line-height, 24);
+        width: 100%;
+        @include toRem(padding-left, 10);
+        @include toRem(font-size, 12);
+        color: #fff;
+        background-color: rgba(0, 0, 0, .6);
+    }
+}
+
+.news {
+    &__item {
+        @extend %clearfix;
+        @include toRem(padding-top, 8);
+        @include toRem(padding-bottom, 8);
+        border-bottom: 1px solid #f1f1f1;
+        &:last-child {
+            border-bottom: none;
+        }
+        &__pic {
+            float: left;
+            @include toRem(width, 62);
+            @include toRem(height, 54);
+        }
+        &__text {
+            @include toRem(margin-left, 67);
+            @include toRem(line-height, 22);
+            @include toRem(font-size, 14);
+        }
+    }
+}
+
+.video {
+    &__change-btn {
+        @extend %btn;
+        @include toRem(margin-top, 10);
+        width: 100%;
+    }
+}
+
+.suggest {
+    &__des {
+        @include toRem(margin-top, 10);
+        @include toRem(margin-bottom, 10);
+        @extend %clearfix;
+        &__img {
+            float: left;
+            @include toRem(width, 53);
+            @include toRem(height, 53);
+        }
+        &__text-wrap {
+            @include toRem(margin-left, 58);
+            // @include toRem(width, 240);
+        }
+        &__title {
+            @include toRem(font-size, 14);
+            @include toRem(margin-bottom, 5);
+        }
+        &__free {
+            display: inline-block;
+            @include toRem(margin-left, 5);
+            @include toRem(font-size, 12);
+            @include toRem(height, 14);
+            @include toRem(line-height, 14);
+            border: 1px solid #28b83c;
+            color: #28b83c;
+        }
+        &__text {
+            color: #999;
+        }
+    }
+    &__btn-group {
+        font-size: 0;
+        &__btn {
+            @extend %btn;
+            width: 50%;
+        }
+    }
+}
+
+.info {
+    &__item {
+        @include toRem(padding-top, 10);
+        @include toRem(padding-bottom, 10);
+        border-bottom: 1px solid #efefef;
+        &__img {
+            float: left;
+            @include toRem(width, 64);
+            @include toRem(height, 54);
+        }
+        &__text-wrap {
+            @include toRem(margin-left, 72);
+            overflow: hidden;
+        }
+        &__name {
+            float: left;
+            @include toRem(font-size, 14);
+            @include toRem(margin-bottom, 5);
+        }
+        &__distance {
+            float: right;
+            @include toRem(font-size, 14);
+        }
+        &__info {
+            color: #999;
+            line-height: 1.2em;
+            >strong {
+                color: #378be9;
+            }
+        }
+    }
+    &__message {
+        @extend %clearfix;
+        @include toRem(height, 22);
+        @include toRem(line-height, 22);
+        &__text {
+            float: left;
+            padding-left: 25px;
+            color: #999;
+        }
+        &__name {
+            color: #333;
+        }
+        &__link {
+            float: right;
+            color: #378be9;
+            @include toRem(margin-right, 10);
+        }
+    }
+}
+
+.nav-btn-group {
+    @extend %border-box;
+    @include toRem(height, 50);
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0;
+    border-top: 1px solid #cacaca;
+    &__btn {
+        position: relative;
+        display: inline-block;
+        width:33.33%;
+        @include toRem(font-size, 12);
+        text-align: center;
+        @include toRem(padding-top, 32);
+    }
+    &__btn--active{
+        color: #378be9;
+    }
+}
