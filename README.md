@@ -43,6 +43,9 @@ focus时，页面会放大。
 * 在 android 手机下 fixed 表现要比 iOS 更好，软键盘弹出时，不会影响fixed元素定位；
 * 不要在 fixed 元素中使用 input / textarea 元素。
 
+对于声明transfrom值非none元素，其子元素中若存在position: fixed将以声明transform的最近祖先作为基准而定位，这是因为transfrom值非none的元素定义了一个局部坐标系统，导致postion: fixed以此坐标系统计算布局。
+目前这个bug仍未被解决，官方建议避免在transform元素下做fixed定位。
+
 ### 使用click会出现绑定点击区域闪一下的情况
 * ，解决：给该元素一个样式如下
 
