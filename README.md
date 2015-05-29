@@ -84,11 +84,13 @@ $('html').height($(document).height());
 * [友盟指数](http://www.umindex.com/) 移动设备的各种统计
 * [常见手机的分辨率](http://screensiz.es/phone)
 * [html5 please](http://html5please.com/) html5的特性及使用
+* [Media Query Snippets](http://nmsdvid.com/snippets/) 各种尺寸和屏的media query
 
 ### 知识汇总
 * [腾讯移动Web前端知识库](https://github.com/AlloyTeam/Mars)
 * [mobileTech](https://github.com/jtyjty99999/mobileTech) 移动方面的资源的汇总
 * [炎燎的移动Web前端开发汇总](https://github.com/maxzhang/maxzhang.github.com)
+* [移动开发的一些坑](https://github.com/tgideas/mtips)
 
 ### 好文收藏
 ## 对Viewport解释
