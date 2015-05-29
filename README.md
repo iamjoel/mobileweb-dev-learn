@@ -47,7 +47,15 @@ focus时，页面会放大。
 目前这个bug仍未被解决，官方建议避免在transform元素下做fixed定位。
 
 ### 使用click会出现绑定点击区域闪一下的情况
-* ，解决：给该元素一个样式如下
+```
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+```
+
+### 让页面高度为浏览器显示高度
+```
+$('html').height($(document).height());
+```
+
 
 ### 关于REM
 * [web app变革之rem](http://isux.tencent.com/web-app-rem.html)
