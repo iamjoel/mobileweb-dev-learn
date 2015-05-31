@@ -107,3 +107,6 @@ visual viewport的宽度即为device-width。
 我发现，只要`<meta name="viewport" content="width=某个值">`,不管那width是多少，页面的visual viewport的宽度就等于layout viewport的宽度
 
 [demo](viewport/)
+
+## 其他
+* [Retina屏的移动设备如何实现真正1px的线？](http://jinlong.github.io/2015/05/24/css-retina-hairlines/)
