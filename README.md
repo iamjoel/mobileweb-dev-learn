@@ -44,8 +44,19 @@ focus时，页面会放大。
 * 在 android 手机下 fixed 表现要比 iOS 更好，软键盘弹出时，不会影响fixed元素定位；
 * 不要在 fixed 元素中使用 input / textarea 元素。
 
+对于声明transfrom值非none元素，其子元素中若存在position: fixed将以声明transform的最近祖先作为基准而定位，这是因为transfrom值非none的元素定义了一个局部坐标系统，导致postion: fixed以此坐标系统计算布局。
+目前这个bug仍未被解决，官方建议避免在transform元素下做fixed定位。
+
 ### 使用click会出现绑定点击区域闪一下的情况
-* ，解决：给该元素一个样式如下
+```
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+```
+
+### 让页面高度为浏览器显示高度
+```
+$('html').height($(document).height());
+```
+
 
 ### 关于REM
 * [web app变革之rem](http://isux.tencent.com/web-app-rem.html)
@@ -74,11 +85,13 @@ focus时，页面会放大。
 * [友盟指数](http://www.umindex.com/) 移动设备的各种统计
 * [常见手机的分辨率](http://screensiz.es/phone)
 * [html5 please](http://html5please.com/) html5的特性及使用
+* [Media Query Snippets](http://nmsdvid.com/snippets/) 各种尺寸和屏的media query
 
 ### 知识汇总
 * [腾讯移动Web前端知识库](https://github.com/AlloyTeam/Mars)
 * [mobileTech](https://github.com/jtyjty99999/mobileTech) 移动方面的资源的汇总
 * [炎燎的移动Web前端开发汇总](https://github.com/maxzhang/maxzhang.github.com)
+* [移动开发的一些坑](https://github.com/tgideas/mtips)
 
 ### 好文收藏
 ## 对Viewport解释
