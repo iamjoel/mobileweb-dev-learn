@@ -116,5 +116,16 @@ device-aspect-ratio可以用来适配特定屏幕长宽比的设备，这也是�
 }
 ```
 
+## -webkit-device-pixel-ratio以及 resolution
+像素密度。    
+-webkit-device-pixel-ratio时非标准写法。标准是用resolution。见 http://caniuse.com/#feat=css-media-resolution 。
+```
+@media (-webkit-min-device-pixel-ratio: 1.5), /* Webkit */
+       (min-resolution: 1.5dppx)              /* The Future */
+...
+}
+```
+通过这个我们可以用来对Retina屏中使用的更清晰对图片。一个工具脚步[retinajs](http://imulus.github.io/retinajs/)
+
 ## 资源
 * http://www.qianduan.net/media-type-and-media-query.html
